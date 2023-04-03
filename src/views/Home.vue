@@ -13,8 +13,26 @@
           permanent
           @click="rail = false"
         >
-          <v-list density="compact" nav>
+        <v-list-item
+          :prepend-avatar="require('../assets/images/avatar.png')"
+          nav
+          class="sidebarCloser"
+          >
+        <div>
+          Любовь Андреевна
+        </div>
+          <template v-slot:append>
+            <v-btn
+              variant="text"
+              icon="mdi-chevron-left"
+              @click.stop="rail = !rail"
+            ></v-btn>
+          </template>
+        </v-list-item>
+        <v-divider></v-divider>
 
+        <v-list density="compact" nav>
+          
 
             <!--================   STATEMENTS TAB   ==================== -->
             
@@ -38,7 +56,7 @@
               @click="selectComponent('statements')"
               class="dropdown"
               :class="{ dropdownActive: componentType === 'statements' }"
-              v-if="statementsShow && componentType === 'statements'"
+              v-if="statementsShow && componentType === 'statements' && !rail"
               >
               <p>Список заявлений</p>
             </div>
@@ -84,7 +102,7 @@
               @click="selectComponent('newSignatories')"
               class="dropdown"
               :class="{ dropdownActive: componentType === 'newSignatories' }"
-              v-if="signatoriesShow && componentType === 'signatories' || componentType === 'newSignatories'">
+              v-if="signatoriesShow && componentType === 'signatories' || componentType === 'newSignatories'  && !rail">
               <p>Новый подписант</p>
             </div>
          
@@ -112,7 +130,7 @@
             <div class="dropdown" 
             @click="selectComponent('newDocuments')"
             :class="{ dropdownActive: componentType === 'newDocuments' }"
-            v-if="documentsShow && componentType === 'documents' || componentType === 'newDocuments'"
+            v-if="documentsShow && componentType === 'documents' || componentType === 'newDocuments'  && !rail"
             >
               <p>Новая доверенность</p>
             </div>
@@ -139,10 +157,10 @@
             <DropdownIcon v-if="!profileShow" />
             <DropdownUp v-else />
             </v-list-item>
-            <div :class="{ dropdownActive: componentType === 'profile' }" class="dropdown" v-if="profileShow">
+            <div :class="{ dropdownActive: componentType === 'profile' }" class="dropdown" v-if="profileShow  && !rail">
               <p @click="selectComponent('profile');">Данные профиля</p>
             </div>
-            <div :class="{ dropdownActive: componentType === 'notification' }" class="dropdown" v-if="profileShow">
+            <div :class="{ dropdownActive: componentType === 'notification' }" class="dropdown" v-if="profileShow  && !rail">
               <p @click="selectComponent('notification')">Уведомления</p>
             </div>
 
@@ -208,12 +226,6 @@ import Profile from '../components/Profile.vue'
 import Notification from '../components/Notification.vue'
 export default defineComponent({
   name: "HomeView",
-  data() {
-    return {
-      drawer: true,
-      rail: false,
-    };
-  },
   components: {
     Folder,
     Rubbish,
@@ -237,6 +249,8 @@ export default defineComponent({
     const signatoriesShow = ref(false);
     const documentsShow = ref(false);
     const profileShow = ref(false);
+    const drawer = ref(true)
+    const rail = ref(true)
     const componentType = ref();
     function openStatements() {
       statementsShow.value = !statementsShow.value;
@@ -289,6 +303,8 @@ export default defineComponent({
       selectComponent,
       profileShow,
       openProfile,
+      drawer,
+      rail
     };
   },
 });

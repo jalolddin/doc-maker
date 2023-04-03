@@ -12,11 +12,8 @@ import { defineComponent } from 'vue'
 import  NavbarComponent  from './components/NavbarContent.vue'
 export default defineComponent({
   name: 'App',
-  data(){
-    return{}
-},
-components: {
-  NavbarComponent
-}
+  components: {
+    NavbarComponent
+  }
 })
 </script>
