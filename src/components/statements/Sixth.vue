@@ -17,7 +17,7 @@
         </div>
         <div class="right">
                 <p>Пример изображения</p>
-                <img v-bind:src="require('../../assets/icons/exampleMarket.jpg')" />
+                <img v-bind:src="require('../../assets/images/exampleMarket.jpg')" />
         </div>
     </div>
     <div class="sixth" v-if="page === 2">
@@ -33,7 +33,7 @@
         </div>
         <div class="right">
                 <p>Пример изображения</p>
-                <img v-bind:src="require('../../assets/icons/exampleMarket.jpg')" />
+                <img v-bind:src="require('../../assets/images/exampleMarket.jpg')" />
         </div>
     </div>
     <div class="sixth" v-if="page === 3">
@@ -49,7 +49,7 @@
         </div>
         <div class="right">
                 <p>Пример изображения</p>
-                <img v-bind:src="require('../../assets/icons/exampleMarket.jpg')" />
+                <img v-bind:src="require('../../assets/images/exampleMarket.jpg')" />
         </div>
     </div>
 </template>

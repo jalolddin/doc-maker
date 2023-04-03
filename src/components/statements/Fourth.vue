@@ -88,7 +88,7 @@
     </div>
     <div class="right">
         <p>Пример карты</p>
-        <img v-bind:src="require('../../assets/icons/exampleMap.jpg')" />
+        <img v-bind:src="require('../../assets/images/exampleMap.jpg')" />
     </div>
 </div>
 </template>

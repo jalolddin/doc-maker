@@ -18,7 +18,7 @@
         </div>
         <div class="right">
             <p>Пример изображения</p>
-            <img v-bind:src="require('../../assets/icons/pyaterochka.jpg')" />
+            <img v-bind:src="require('../../assets/images/pyaterochka.jpg')" />
         </div>
     </article>
     </div>
@@ -36,7 +36,7 @@
             </div>
             <div class="right">
                 <p>Пример изображения</p>
-                <img v-bind:src="require('../../assets/icons/exampleMarket2.jpg')" />
+                <img v-bind:src="require('../../assets/images/exampleMarket2.jpg')" />
             </div>
         </article>
     </div>
@@ -62,7 +62,7 @@
             </div>
             <div class="right">
                 <p>Пример изображения</p>
-                <img v-bind:src="require('../../assets/icons/exampleMarket.jpg')" />
+                <img v-bind:src="require('../../assets/images/exampleMarket.jpg')" />
                 <span v-if="switchValue">Название файла, перспектива.jpg</span>
             </div>
         </article>
