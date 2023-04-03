@@ -1,0 +1,1279 @@
+.statements {
+    // height: 110vh;
+    &__content {
+        height: 120vh;
+        padding: 1.5rem;
+        .search {
+            display: flex;
+            gap: 1rem;
+            button {
+                width: 180px;
+                height: 48px;
+                background: #2F80ED;
+                border-radius: 2px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                font-size: 14px;
+            }
+            input {
+                outline: none;
+                font-size: 14px;
+                width: 995.48px;
+                height: 48px;
+                padding-left: 2%;
+                background: #FFFFFF;
+                border-radius: 2px;
+            }
+        }
+        .data {
+            .v-table {
+                margin-top: 2rem;
+                .v-table__wrapper {
+                    overflow-y: hidden;
+                }
+                table {
+                    thead {
+                        tr {
+                            height: 60px;
+                            th {
+                                padding: 0 15px;
+                                font-family: 'Roboto';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            height: 60px;
+                            td {
+                                font-family: 'Roboto';
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .v-pagination {
+            margin-top: 3rem;
+            &__list {
+                display: flex;
+                justify-content: flex-start;
+                padding-left: 1.5rem;
+            }
+        }
+        .v-pagination .v-btn {
+            border: 1px solid#2F80ED;
+            color: #2F80ED;
+            background-color: white;
+        }
+        .v-pagination__prev {
+            border-radius: 2px;
+            color: white;
+        }
+    }
+}
+
+//  =================    reate new statement
+.create__statements {
+    display: flex;
+    flex-direction: column;
+    .v-pagination {
+        margin-top: 3rem;
+        span {
+            font-size: 1rem;
+        }
+        &__list {
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 1.5rem;
+        }
+    }
+    .v-pagination .v-btn {
+        border: 1px solid#2F80ED;
+        color: #2F80ED;
+        background-color: white;
+    }
+    .v-pagination__prev {
+        border-radius: 2px;
+        color: white;
+    }
+    .example {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        margin-top: 1.5rem;
+        // float: right;
+        right: 1rem;
+        top: 5.5rem;
+        // bottom: -40rem;
+        p {
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 12px;
+            color: #2F80ED;
+        }
+        .rectangle {
+            padding: 0.5rem;
+            width: 150px;
+            height: 205px;
+            left: 1270.97px;
+            top: 170.74px;
+            background: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    // Create Stage
+    &__content {
+        padding: 1.5rem;
+        height: 75vh;
+        .create {
+            display: flex;
+            gap: 1.5rem;
+            .left {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 1.5rem;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    .select {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding-left: 3%;
+                        padding-right: 3%;
+                        background: #FFFFFF;
+                        border-radius: 2px;
+                        width: 480px;
+                        height: 50px;
+                        cursor: pointer;
+                        .selectInput {
+                            cursor: pointer;
+                            outline: none;
+                            appearance: none;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            padding: 0;
+                            line-height: 16px;
+                        }
+                    }
+                    .dropdownInfo {
+                        background-color: white;
+                        width: 480px;
+                        position: absolute;
+                        margin-top: 6rem;
+                        p {
+                            cursor: pointer;
+                            padding: 1rem;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 16px;
+                        }
+                    }
+                    input {
+                        background: #FFFFFF;
+                        border-radius: 2px;
+                        width: 480px;
+                        height: 48px;
+                        padding-left: 1rem;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 13px;
+                        outline: none;
+                        line-height: 16px;
+                        color: black;
+                    }
+                    span {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: #2F80ED;
+                    }
+                }
+            }
+            .right {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    input {
+                        background: #FFFFFF;
+                        border-radius: 2px;
+                        width: 480px;
+                        height: 48px;
+                        padding-left: 1rem;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 13px;
+                        outline: none;
+                        line-height: 16px;
+                        color: black;
+                    }
+                    span {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: #2F80ED;
+                    }
+                }
+            }
+        }
+    }
+    //  ======= Second pagination
+    .second {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        p {
+            font-size: 16px;
+        }
+        .select {
+            margin-top: 0.3rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 2%;
+            padding-right: 2%;
+            background: #FFFFFF;
+            border-radius: 2px;
+            width: 520px;
+            height: 50px;
+            cursor: pointer;
+            .selectInput {
+                cursor: pointer;
+                outline: none;
+                appearance: none;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                padding: 0;
+                line-height: 16px;
+                width: 100%;
+            }
+            input {
+                cursor: pointer;
+                outline: none;
+                appearance: none;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                padding: 0;
+                line-height: 16px;
+            }
+        }
+        .dropdownInfo {
+            background-color: white;
+            width: 520px;
+            position: absolute;
+            margin-top: 5rem;
+            p {
+                cursor: pointer;
+                padding: 1rem;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+    .steps {
+        display: flex;
+        gap: 0.7rem;
+        .activeStep {
+            border: 1px solid #2F80ED;
+            color: #2F80ED;
+        }
+        button {
+            width: 104px;
+            height: 48px;
+            background: #FFFFFF;
+            color: #E0E0E0;
+            border-radius: 2px;
+        }
+    }
+    // =====  Third pagination
+    .independetly {
+        display: flex;
+        gap: 1.5rem;
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 3%;
+            gap: 1.5rem;
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 1.9%;
+            .v-input--density-default {
+                --v-input-control-height: 0px;
+                --v-input-padding-top: 0px;
+            }
+            .gender {
+                margin-top: 1.7rem;
+            }
+            section {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                .v-label {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: black;
+                    opacity: 1;
+                }
+                .v-selection-control-group {
+                    margin-left: -10px;
+                    display: flex;
+                    gap: 3rem;
+                    padding: 0;
+                    height: 48px;
+                }
+                .lastname {
+                    background: #FFFFFF;
+                    border-radius: 2px;
+                    width: 480px;
+                    height: 48px;
+                    padding-left: 1rem;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    outline: none;
+                    line-height: 16px;
+                    color: black;
+                    margin-top: -0.6rem;
+                }
+                .uploadFile {
+                    width: 480px;
+                    height: 171px;
+                    background: #2F80ED;
+                    border-radius: 2px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p {
+                        color: white;
+                        text-align: center;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .independetly_two {
+        display: flex;
+        gap: 1.5rem;
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 3%;
+            gap: 1.5rem;
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 3%;
+            gap: 1.5rem;
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    }
+    // Fourth pagination
+    .fourth {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            // padding-top: 3%;
+            gap: 1.5rem;
+            .input__groups {
+                display: flex;
+                flex-direction: row;
+                div {
+                    &:nth-child(1) {
+                        input {
+                            width: 94px;
+                            padding-left: 40%;
+                        }
+                    }
+                    &:nth-child(2) {
+                        div {
+                            width: 172.9px;
+                            justify-content: space-evenly;
+                            input {
+                                padding-left: 15%;
+                                width: 80%;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        input {
+                            width: 196.49px;
+                            padding-left: 45%;
+                        }
+                    }
+                }
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                .select {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-left: 2%;
+                    padding-right: 2%;
+                    background: #FFFFFF;
+                    border-radius: 2px;
+                    width: 480px;
+                    height: 50px;
+                    cursor: pointer;
+                    .selectInput {
+                        cursor: pointer;
+                        outline: none;
+                        appearance: none;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        padding: 0;
+                        line-height: 16px;
+                        width: 100%;
+                    }
+                }
+                .dropdownInfo {
+                    background-color: white;
+                    width: 480px;
+                    position: absolute;
+                    margin-top: 4rem;
+                    p {
+                        cursor: pointer;
+                        padding: 1rem;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+        .right {
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                .select {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-left: 2%;
+                    padding-right: 2%;
+                    background: #FFFFFF;
+                    border-radius: 2px;
+                    width: 480px;
+                    height: 50px;
+                    cursor: pointer;
+                    .selectInput {
+                        cursor: pointer;
+                        outline: none;
+                        appearance: none;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        padding: 0;
+                        line-height: 16px;
+                        width: 100%;
+                    }
+                }
+                .dropdownInfo {
+                    background-color: white;
+                    width: 480px;
+                    position: absolute;
+                    margin-top: 4rem;
+                    p {
+                        cursor: pointer;
+                        padding: 1rem;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .address_two {
+        display: flex;
+        align-items: flex-end;
+        gap: 2.5rem;
+        margin-top: 1.5rem;
+        .v-input__control {
+            margin-top: 1rem;
+            margin-left: -0.5rem;
+            label {
+                opacity: 1;
+                font-weight: 400;
+                font-size: 16px;
+            }
+        }
+        .left {
+            display: flex;
+            flex-direction: column;
+            span {
+                margin-top: -1rem;
+                font-family: 'Roboto';
+                font-size: 12px;
+                color: #2F80ED;
+                width: 30px;
+                width: 380.32px;
+            }
+            .uploadFile {
+                width: 461.31px;
+                height: 290.55px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background: #2F80ED;
+                border-radius: 2px;
+                p {
+                    color: white;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0;
+            img {
+                height: 290.94px;
+                width: 444.54px;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+    //  ===============  Fifth pagination
+    .fifth {
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 3%;
+            gap: 1.5rem;
+            section {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                .select {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-left: 2%;
+                    padding-right: 2%;
+                    background: #FFFFFF;
+                    border-radius: 2px;
+                    width: 480px;
+                    height: 50px;
+                    cursor: pointer;
+                    .selectInput {
+                        cursor: pointer;
+                        outline: none;
+                        appearance: none;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        padding: 0;
+                        line-height: 16px;
+                        width: 100%;
+                    }
+                }
+                .dropdownInfo {
+                    background-color: white;
+                    width: 480px;
+                    margin-top: -1rem;
+                    p {
+                        cursor: pointer;
+                        padding: 1rem;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+    // ========== Sixth pagination
+    .sixth {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 0rem;
+        align-items: center;
+        padding-top: 1.5rem;
+        .left {
+            display: flex;
+            flex-direction: column;
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 0rem;
+            }
+            .fileUpload {
+                width: 461.31px;
+                height: 404.27px;
+                border-radius: 2px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-top: 0.5rem;
+                background: #2F80ED;
+                p {
+                    color: white;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+            span {
+                font-size: 12px;
+                margin-top: 0.5rem;
+                color: #2F80ED;
+            }
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            img {
+                margin-top: 0.5rem;
+                width: 100%;
+                height: 404.27px;
+            }
+        }
+    }
+    // ========= Seventh pagination
+    .seventh {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 0rem;
+        align-items: center;
+        padding-top: 1.5rem;
+        .left {
+            display: flex;
+            flex-direction: column;
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 0rem;
+            }
+            .fileUpload {
+                width: 461.31px;
+                height: 404.27px;
+                border-radius: 2px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background: #2F80ED;
+                margin-top: 0.5rem;
+                p {
+                    color: white;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+            span {
+                font-size: 12px;
+                margin-top: 0.5rem;
+                color: #2F80ED;
+            }
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            img {
+                margin-top: 0.5rem;
+                width: 100%;
+                height: 404.27px;
+            }
+        }
+    }
+    //   =================   Eight pagination
+    .eight {
+        .v-label {
+            width: 400px;
+            margin-top: 1rem;
+        }
+        article {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: -0.5rem;
+            align-items: center;
+            padding-top: 1.5rem;
+        }
+        .left {
+            display: flex;
+            flex-direction: column;
+            .v-input__control {
+                label {
+                    opacity: 1;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+            section {
+                display: flex;
+                flex-direction: column;
+                gap: 0rem;
+            }
+            .fileUpload {
+                width: 461.31px;
+                height: 350.27px;
+                border-radius: 2px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background: #2F80ED;
+                margin-top: 0.5rem;
+                p {
+                    color: white;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+            span {
+                font-size: 12px;
+                margin-top: 0.5rem;
+                color: #2F80ED;
+            }
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            img {
+                margin-top: 0.5rem;
+                width: 100%;
+                height: 350.27px;
+            }
+            span {
+                font-size: 12px;
+                margin-top: 0.5rem;
+                color: #2F80ED;
+            }
+        }
+    }
+    // Nine pagination
+    .NineStepOne {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1.5rem;
+        .quantitySelect {
+            .select {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding-left: 10%;
+                padding-right: 10%;
+                background: #FFFFFF;
+                border-radius: 2px;
+                width: 154.38px;
+                height: 48px;
+                cursor: pointer;
+                .selectInput {
+                    cursor: pointer;
+                    outline: none;
+                    appearance: none;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    padding: 0;
+                    line-height: 16px;
+                    width: 100%;
+                }
+            }
+            .dropdownInfo {
+                background-color: white;
+                width: 154.38px;
+                position: absolute;
+                margin-top: 4rem;
+                p {
+                    cursor: pointer;
+                    padding: 1rem;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+        .info {
+            input {
+                width: 239.08px;
+                height: 48px;
+                background: #FFFFFF;
+                border-radius: 2px;
+                padding-left: 1rem;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                outline: none;
+                line-height: 16px;
+                color: black;
+            }
+            section {
+                display: flex;
+                flex-direction: row;
+                gap: 2.3rem;
+                div {
+                    gap: 0.3rem;
+                }
+            }
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            input {
+                width: 154.77px;
+                height: 48px;
+                background: #FFFFFF;
+                border-radius: 2px;
+                padding-left: 1rem;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                outline: none;
+                line-height: 16px;
+                color: black;
+            }
+            section {
+                // margin-top: -0.5rem;
+                display: flex;
+                flex-direction: row;
+                gap: 1.5rem;
+                div {
+                    gap: 0.3rem;
+                }
+            }
+            .select {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding-left: 2%;
+                padding-right: 2%;
+                background: #FFFFFF;
+                border-radius: 2px;
+                width: 512px;
+                height: 50px;
+                cursor: pointer;
+                .selectInput {
+                    cursor: pointer;
+                    outline: none;
+                    appearance: none;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    padding: 0;
+                    line-height: 16px;
+                    width: 100%;
+                }
+            }
+            .dropdownInfo {
+                background-color: white;
+                width: 512px;
+                position: absolute;
+                margin-top: 6rem;
+                p {
+                    cursor: pointer;
+                    padding: 1rem;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+    // Second Pagination
+    .NineStepTwo {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        margin-top: 1rem;
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .quantitySelect {
+            .select {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding-left: 10%;
+                padding-right: 10%;
+                background: #FFFFFF;
+                border-radius: 2px;
+                width: 154.38px;
+                height: 48px;
+                cursor: pointer;
+                .selectInput {
+                    cursor: pointer;
+                    outline: none;
+                    appearance: none;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    padding: 0;
+                    line-height: 16px;
+                    width: 100%;
+                }
+            }
+            .dropdownInfo {
+                background-color: white;
+                width: 154.38px;
+                position: absolute;
+                margin-top: 4rem;
+                p {
+                    cursor: pointer;
+                    padding: 1rem;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+            input {
+                width: 154.77px;
+                height: 48px;
+                background: #FFFFFF;
+                border-radius: 2px;
+                padding-left: 1rem;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                outline: none;
+                line-height: 16px;
+                color: black;
+            }
+            section {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                div {
+                    gap: 0.3rem;
+                }
+            }
+            .select {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding-left: 2%;
+                padding-right: 2%;
+                background: #FFFFFF;
+                border-radius: 2px;
+                width: 494.58px;
+                height: 48px;
+                cursor: pointer;
+                .selectInput {
+                    cursor: pointer;
+                    outline: none;
+                    appearance: none;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    padding: 0;
+                    line-height: 16px;
+                    width: 100%;
+                }
+            }
+            .dropdownInfo {
+                background-color: white;
+                width: 494.58px;
+                position: absolute;
+                margin-top: 6rem;
+                p {
+                    cursor: pointer;
+                    padding: 1rem;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+        .info {
+            input {
+                width: 239.08px;
+                height: 48px;
+                background: #FFFFFF;
+                border-radius: 2px;
+                padding-left: 1rem;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                outline: none;
+                line-height: 16px;
+                color: black;
+            }
+            section {
+                display: flex;
+                flex-direction: row;
+                gap: 1.2rem;
+                div {
+                    gap: 0.3rem;
+                }
+            }
+        }
+    }
+    .NineStepThree {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        section {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1.5rem;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+            input {
+                width: 239.08px;
+                height: 48px;
+                background: #FFFFFF;
+                border-radius: 2px;
+                padding-left: 1rem;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                outline: none;
+                line-height: 16px;
+                color: black;
+            }
+            span {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                color: #2F80ED;
+            }
+        }
+    }
+    // Tenth pagination
+    .tenth {
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 3%;
+            gap: 1.5rem;
+            section {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                .select {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-left: 2%;
+                    padding-right: 2%;
+                    background: #FFFFFF;
+                    border-radius: 2px;
+                    width: 494.58px;
+                    height: 50px;
+                    cursor: pointer;
+                    .selectInput {
+                        cursor: pointer;
+                        outline: none;
+                        appearance: none;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        padding: 0;
+                        line-height: 16px;
+                        width: 100%;
+                    }
+                }
+                .dropdownInfo {
+                    background-color: white;
+                    width: 494.58px;
+                    position: absolute;
+                    margin-top: 6rem;
+                    p {
+                        cursor: pointer;
+                        padding: 1rem;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+    // Eleventh pagination
+    .eleventh {
+        display: flex;
+        gap: 1.5rem;
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 3%;
+            gap: 1.5rem;
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                .save__application {
+                    border: 1px solid #2F80ED;
+                    color: #2F80ED;
+                    background-color: #FFFFFF;
+                    width: 494.58px;
+                    height: 48px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 16px;
+                }
+                .save__statement {
+                    color: white;
+                    background-color: #2F80ED;
+                    width: 494.58px;
+                    height: 48px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 16px;
+                }
+            }
+            .new__statement {
+                border: 1px solid #2F80ED;
+                color: #2F80ED;
+                background-color: #FFFFFF;
+                width: 494.58px;
+                height: 48px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 16px;
+                margin-top: 3rem;
+            }
+        }
+    }
+}

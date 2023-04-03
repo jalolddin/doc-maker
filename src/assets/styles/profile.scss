@@ -1,0 +1,55 @@
+.profile {
+    &__info {
+        height: 120vh;
+        padding: 1.5rem;
+        &__photo {
+            background-image: url('../images/profile-image.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 262px;
+            height: 262px;
+            border-radius: 50%;
+        }
+        &__data {
+            width: 100%;
+            // margin: 0 auto;
+            margin-top: 2rem;
+            div {
+                display: flex;
+                // gap: 3rem;
+                background-color: white;
+                height: 60px;
+                align-items: center;
+                margin-top: 3px;
+                border-radius: 2px;
+                padding-left: 2%;
+                h2 {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    width: 20%;
+                }
+                input {
+                    margin-left: 3rem;
+                    height: 100%;
+                    outline: none;
+                    appearance: none;
+                    width: 70%;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+            button {
+                background: #2F80ED;
+                border-radius: 2px;
+                width: 240px;
+                height: 60.38px;
+                color: white;
+                margin-top: 2rem;
+            }
+        }
+    }
+}

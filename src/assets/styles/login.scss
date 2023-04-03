@@ -1,0 +1,92 @@
+.login {
+    background-color: #2F80ED;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .logo {
+        h2 {
+            color: white;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+    p {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: white;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        margin-left: -30px;
+    }
+    .form {
+        width: 350px;
+        height: 395px;
+        background: #FFFFFF;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+            label {
+                font-family: 'Roboto';
+                font-weight: 400;
+                font-size: 12px;
+                color: #2F80ED;
+            }
+            input {
+                width: 285.61px;
+                height: 48px;
+                padding: 1rem;
+                background: #FFFFFF;
+                border: 1px solid #2F80ED;
+                border-radius: 2px;
+                outline: none;
+            }
+            span {
+                text-align: center;
+                font-weight: 400;
+                font-size: 12px;
+                color: #2F80ED;
+                margin-top: 0.2rem;
+                margin-bottom: 0.2rem;
+            }
+            button:nth-of-type(1) {
+                background: #FFFFFF;
+                border: 1px solid #2F80ED;
+                border-radius: 2;
+                width: 285.61px;
+                margin-top: 1.5rem;
+                height: 48px;
+                color: #2F80ED;
+            }
+            button:nth-of-type(2) {
+                background: #2F80ED;
+                border: 1px solid #2F80ED;
+                color: white;
+                border-radius: 2px;
+                width: 285.61px;
+                height: 48px;
+            }
+        }
+        span {
+            text-align: center;
+            font-weight: 400;
+            font-size: 12px;
+            color: #2F80ED;
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+        }
+    }
+}

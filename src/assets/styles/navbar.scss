@@ -1,0 +1,85 @@
+.navbar {
+    background-color: #2F80ED;
+    height: 3.5rem;
+    display: flex;
+    // padding: 1rem;
+    padding-left: 2%;
+    // padding-right: 2%;
+    align-items: center;
+    justify-content: space-between;
+    &__logo {
+        display: flex;
+        gap: 0.5rem;
+        // align-items: center;
+        h1 {
+            font-weight: 800;
+            font-size: 14px;
+            color: white;
+        }
+    }
+    &__profile {
+        display: flex;
+        align-items: center;
+        gap: 1.1rem;
+        margin-left: -3rem;
+        margin-right: 2%;
+        .avatar {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            h2 {
+                color: white;
+                font-weight: 400;
+                font-size: 15px;
+            }
+        }
+        .logout {
+            margin-left: 3rem;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .logout__container {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        // margin-left: -3rem;
+        padding-left: 3rem;
+        height: 280px;
+        background-color: white;
+        .avatar {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            h2 {
+                color: #2F80ED;
+                font-weight: 400;
+                font-size: 15px;
+            }
+        }
+        .logout {
+            margin-left: 3rem;
+            display: flex;
+            align-items: center;
+        }
+        .logout__icon {
+            display: flex;
+            flex-direction: column;
+            height: 5rem;
+            margin-top: 4rem;
+            align-items: flex-end;
+            justify-content: space-between;
+            // background-color: red;
+            margin-right: 2rem;
+            p {
+                color: #333333;
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+    }
+}

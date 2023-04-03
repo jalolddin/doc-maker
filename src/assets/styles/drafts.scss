@@ -1,0 +1,80 @@
+.drafts {
+    height: 130vh;
+    &__content {
+        padding: 1.5rem;
+        .search {
+            display: flex;
+            gap: 1rem;
+            button {
+                width: 180px;
+                height: 48px;
+                background: #2F80ED;
+                border-radius: 2px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                font-size: 14px;
+            }
+            input {
+                outline: none;
+                font-size: 14px;
+                width: 100%;
+                height: 48px;
+                padding-left: 2%;
+                background: #FFFFFF;
+                border-radius: 2px;
+            }
+        }
+        .data {
+            .v-table {
+                margin-top: 2rem;
+                .v-table__wrapper {
+                    overflow-y: hidden;
+                }
+                table {
+                    thead {
+                        tr {
+                            height: 60px;
+                            th {
+                                padding: 0 15px;
+                                font-family: 'Roboto';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            height: 60px;
+                            td {
+                                font-family: 'Roboto';
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .v-pagination {
+        margin-top: -0.1rem;
+        &__list {
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 1.5rem;
+        }
+    }
+    .v-pagination .v-btn {
+        border: 1px solid#2F80ED;
+        color: #2F80ED;
+        background-color: white;
+    }
+    .v-pagination__prev {
+        border-radius: 2px;
+        color: white;
+    }
+}

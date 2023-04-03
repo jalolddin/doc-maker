@@ -1,0 +1,30 @@
+.notification {
+    &__info {
+        padding: 1.5rem;
+        &__data {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            height: 60px;
+            align-items: center;
+            margin-top: 3px;
+            border-radius: 2px;
+            padding-left: 2%;
+            padding-right: 2%;
+            div {
+                display: flex;
+                align-items: center;
+                gap: 5rem;
+                p {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+            svg {
+                margin-right: 0;
+            }
+        }
+    }
+}

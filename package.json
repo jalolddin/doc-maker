@@ -1,0 +1,63 @@
+{
+    "name": "dm",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint"
+    },
+    "dependencies": {
+        "2gis-maps": "^3.7.1",
+        "@fawmi/vue-google-maps": "^0.9.79",
+        "@fortawesome/fontawesome-svg-core": "^6.1.1",
+        "@fortawesome/free-brands-svg-icons": "^6.1.1",
+        "@fortawesome/free-regular-svg-icons": "^6.1.1",
+        "@fortawesome/free-solid-svg-icons": "^6.1.1",
+        "@fortawesome/vue-fontawesome": "^3.0.0-5",
+        "@googlemaps/js-api-loader": "^1.14.3",
+        "@lbgm/phone-number-input": "^1.1.4",
+        "@mdi/font": "5.9.55",
+        "axios": "^0.27.2",
+        "bootstrap": "^5.2.2",
+        "core-js": "^3.8.3",
+        "maz-ui": "^3.0.7",
+        "pinia": "^2.0.21",
+        "primevue": "^3.18.1",
+        "roboto-fontface": "*",
+        "v-calendar": "^3.0.0-alpha.8",
+        "vue": "^3.2.13",
+        "vue-autosuggest": "^2.2.0",
+        "vue-phone-number-input": "^1.12.13",
+        "vue-plugin-load-script": "^2.1.1",
+        "vue-router": "^4.0.3",
+        "vue-yandex-maps": "^1.0.5",
+        "vue3-autocomplete": "^0.1.0",
+        "vue3-tel-input": "^1.0.4",
+        "vue3-touch-events": "^4.1.0",
+        "vuetify": "^3.0.0-beta.0",
+        "vuex": "^4.0.0",
+        "webfontloader": "^1.0.0"
+    },
+    "devDependencies": {
+        "@types/webfontloader": "^1.0.0",
+        "@vue/cli-plugin-babel": "~5.0.8",
+        "@vue/cli-plugin-router": "~5.0.8",
+        "@vue/cli-plugin-typescript": "~5.0.0",
+        "@vue/cli-plugin-vuex": "~5.0.0",
+        "@vue/cli-service": "^5.0.8",
+        "lint-staged": "^11.1.2",
+        "sass": "^1.32.7",
+        "sass-loader": "^12.0.0",
+        "typescript": "~4.5.5",
+        "vue-cli-plugin-vuetify": "~2.5.8",
+        "webpack-plugin-vuetify": "^2.0.0-alpha.0"
+    },
+
+    "gitHooks": {
+        "pre-commit": "lint-staged"
+    },
+    "lint-staged": {
+        "*.{js,jsx,vue,ts,tsx}": "vue-cli-service lint"
+    }
+}
