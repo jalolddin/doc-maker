@@ -13,23 +13,6 @@
           permanent
           @click="rail = false"
         >
-        <v-list-item
-          :prepend-avatar="require('../assets/images/avatar.png')"
-          nav
-          class="sidebarCloser"
-          >
-        <div>
-          Любовь Андреевна
-        </div>
-          <template v-slot:append>
-            <v-btn
-              variant="text"
-              icon="mdi-chevron-left"
-              @click.stop="rail = !rail"
-            ></v-btn>
-          </template>
-        </v-list-item>
-        <v-divider></v-divider>
 
         <v-list density="compact" nav>
           

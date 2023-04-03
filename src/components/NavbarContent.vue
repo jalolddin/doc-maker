@@ -19,9 +19,9 @@
       <!-- ===== LOGOUT  ======= -->
       
       <div class="navbar__profile" v-if="logout">
-          <v-badge content="2" color="#FF4D4F">
+          <!-- <v-badge content="2" color="#FF4D4F"> -->
             <v-icon color="white">mdi-bell-outline</v-icon>
-          </v-badge>
+          <!-- </v-badge> -->
           <div class="avatar">
               <v-avatar  size="36">
                 <v-img src="../assets/images/avatar.png"></v-img>

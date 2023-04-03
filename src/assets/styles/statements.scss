@@ -95,11 +95,23 @@
             padding-left: 1.5rem;
         }
     }
-    .v-pagination .v-btn {
+    .v-pagination__item--is-active {
         border: 1px solid#2F80ED;
-        color: #2F80ED;
-        background-color: white;
+        button {
+            .v-btn__content {
+                color: #2F80ED;
+            }
+        }
     }
+    .v-pagination__item {
+        background-color: white;
+        .v-btn__content {
+            color: #E0E0E0;
+        }
+    }
+    // .v-pagination .v-btn {
+    //     // color: #2F80ED;
+    // }
     .v-pagination__prev {
         border-radius: 2px;
         color: white;
