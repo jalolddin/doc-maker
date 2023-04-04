@@ -1,8 +1,9 @@
 .statements {
     // height: 110vh;
     &__content {
-        height: 120vh;
+        // height: 120vh;
         padding: 1.5rem;
+        padding-top: 1rem;
         .search {
             display: flex;
             gap: 1rem;
@@ -20,7 +21,7 @@
             input {
                 outline: none;
                 font-size: 14px;
-                width: 995.48px;
+                width: 100%;
                 height: 48px;
                 padding-left: 2%;
                 background: #FFFFFF;
@@ -29,30 +30,30 @@
         }
         .data {
             .v-table {
-                margin-top: 2rem;
+                margin-top: 1rem;
                 .v-table__wrapper {
                     overflow-y: hidden;
                 }
                 table {
                     thead {
                         tr {
-                            height: 60px;
+                            height: 53px;
                             th {
                                 padding: 0 15px;
                                 font-family: 'Roboto';
                                 font-style: normal;
                                 font-weight: 400;
-                                font-size: 14px;
+                                font-size: 12px;
                             }
                         }
                     }
                     tbody {
                         tr {
-                            height: 60px;
+                            height: 53px;
                             td {
                                 font-family: 'Roboto';
                                 font-weight: 400;
-                                font-size: 14px;
+                                font-size: 12px;
                                 line-height: 22px;
                             }
                         }

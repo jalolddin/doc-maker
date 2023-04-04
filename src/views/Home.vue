@@ -39,7 +39,8 @@
               @click="selectComponent('statements')"
               class="dropdown"
               :class="{ dropdownActive: componentType === 'statements' }"
-              v-if="statementsShow && componentType === 'statements' && !rail"
+              v-if="statementsShow && componentType === 'statements'"
+              v-show="!rail"
               >
               <p>Список заявлений</p>
             </div>
@@ -85,7 +86,9 @@
               @click="selectComponent('newSignatories')"
               class="dropdown"
               :class="{ dropdownActive: componentType === 'newSignatories' }"
-              v-if="signatoriesShow && componentType === 'signatories' || componentType === 'newSignatories'  && !rail">
+              v-if="signatoriesShow && componentType === 'signatories' || componentType === 'newSignatories'"
+              v-show="!rail"
+              >
               <p>Новый подписант</p>
             </div>
          
@@ -113,7 +116,8 @@
             <div class="dropdown" 
             @click="selectComponent('newDocuments')"
             :class="{ dropdownActive: componentType === 'newDocuments' }"
-            v-if="documentsShow && componentType === 'documents' || componentType === 'newDocuments'  && !rail"
+            v-if="documentsShow && componentType === 'documents' || componentType === 'newDocuments'"
+            v-show="!rail"
             >
               <p>Новая доверенность</p>
             </div>
@@ -140,7 +144,7 @@
             <DropdownIcon v-if="!profileShow" />
             <DropdownUp v-else />
             </v-list-item>
-            <div :class="{ dropdownActive: componentType === 'profile' }" class="dropdown" v-if="profileShow  && !rail">
+            <div :class="{ dropdownActive: componentType === 'profile' }" class="dropdown" v-if="profileShow && !rail">
               <p @click="selectComponent('profile');">Данные профиля</p>
             </div>
             <div :class="{ dropdownActive: componentType === 'notification' }" class="dropdown" v-if="profileShow  && !rail">
@@ -163,6 +167,13 @@
             <DropdownIcon />
             </v-list-item>
           </v-list>
+          <v-btn
+          v-if="!rail"
+           class="closeIcon"
+            variant="text"
+            icon="mdi-chevron-left"
+            @click.stop="rail = true"
+          ></v-btn>
         </v-navigation-drawer>
 
 

@@ -278,9 +278,10 @@
 }
 
 .signatories {
-    height: 130vh;
+    // height: 130vh;
     &__content {
         padding: 1.5rem;
+        padding-top: 1rem;
         .search {
             display: flex;
             gap: 1rem;
@@ -306,7 +307,7 @@
             }
         }
         .data {
-            margin-top: 1.5rem;
+            margin-top: 1rem;
             .v-table {
                 .v-table__wrapper {
                     overflow-y: hidden;
@@ -314,23 +315,23 @@
                 table {
                     thead {
                         tr {
-                            height: 60px;
+                            height: 53px;
                             th {
                                 padding: 0 15px;
                                 font-family: 'Roboto';
                                 font-style: normal;
                                 font-weight: 400;
-                                font-size: 14px;
+                                font-size: 12px;
                             }
                         }
                     }
                     tbody {
                         tr {
-                            height: 60px;
+                            height: 53px;
                             td {
                                 font-family: 'Roboto';
                                 font-weight: 400;
-                                font-size: 14px;
+                                font-size: 12px;
                                 line-height: 22px;
                             }
                         }

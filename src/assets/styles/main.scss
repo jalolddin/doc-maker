@@ -7,15 +7,13 @@ body {
     height: 100vh;
 }
 
-.sidebarCloser {
-    margin: 0;
-    font-size: 0.9rem;
-    // button {
-    // }
-    .v-btn--icon {
-        background: none;
-        margin-right: -1.2rem;
-        margin-top: 0.6rem;
+.closeIcon {
+    position: absolute;
+    // background-color: red;
+    right: -0.2rem;
+    top: 65%;
+    i {
+        color: #E0E0E0;
     }
 }
 
