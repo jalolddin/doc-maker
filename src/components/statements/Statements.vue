@@ -54,13 +54,16 @@
     </tbody>
   </v-table>
 </div>
-<v-pagination
-    v-model="page"
-    :length="77"
-    v-if="!newStatement"
-  >
-</v-pagination>
 </div>
+<vue-awesome-paginate
+    :total-items="85"
+    :items-per-page="5"
+    :max-pages-shown="77"
+    v-model="page"
+    prev-button-content="Назад"
+    next-button-content="Далее"
+    v-if="!newStatement"
+  />
 <NewStatement v-if="newStatement" />
 
   </div>

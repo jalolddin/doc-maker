@@ -1,5 +1,5 @@
 .drafts {
-    height: 100vh;
+    // height: 100vh;
     &__content {
         padding: 1.5rem;
         padding-top: 1rem;
@@ -60,22 +60,5 @@
                 }
             }
         }
-    }
-    .v-pagination {
-        margin-top: -0.1rem;
-        &__list {
-            display: flex;
-            justify-content: flex-start;
-            padding-left: 1.5rem;
-        }
-    }
-    .v-pagination .v-btn {
-        border: 1px solid#2F80ED;
-        color: #2F80ED;
-        background-color: white;
-    }
-    .v-pagination__prev {
-        border-radius: 2px;
-        color: white;
     }
 }

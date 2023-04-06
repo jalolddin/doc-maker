@@ -7,6 +7,48 @@ body {
     height: 100vh;
 }
 
+.pagination-container {
+    margin-left: 2%;
+    display: flex;
+    column-gap: 11px;
+    .number-buttons {
+        color: #E0E0E0;
+    }
+    .next-button {
+        background-color: #2F80ED;
+        color: white;
+        font-size: 14px;
+        width: 83px;
+        height: 48px;
+    }
+    .back-button {
+        font-size: 14px;
+        width: 83px;
+        height: 48px;
+    }
+    .active-page {
+        // background-color: #2F80ED;
+        border: 1px solid #2F80ED;
+        color: #2F80ED;
+    }
+    .active-page:hover {
+        background-color: rgb(255 255 255);
+    }
+}
+
+.paginate-buttons {
+    height: 46px;
+    width: 46px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.paginate-buttons:hover {
+    background-color: #d8d8d8;
+}
+
 .closeIcon {
     position: absolute;
     // background-color: red;

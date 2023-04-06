@@ -87,11 +87,14 @@
                 </svg>
               </div>
         </div>
-<v-pagination
-      v-model="page"
-      :length="77"
-    >
-  </v-pagination>
+        <vue-awesome-paginate
+        :total-items="85"
+        :items-per-page="5"
+        :max-pages-shown="77"
+        v-model="page"
+        prev-button-content="Назад"
+        next-button-content="Далее"
+  />
     </div>
 </template>
 

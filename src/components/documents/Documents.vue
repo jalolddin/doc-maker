@@ -52,11 +52,14 @@
   </v-table>
 </div>
 </div>
-<v-pagination
+<vue-awesome-paginate
+    :total-items="85"
+    :items-per-page="5"
+    :max-pages-shown="77"
     v-model="page"
-    :length="77"
-  >
-</v-pagination>
+    prev-button-content="Назад"
+    next-button-content="Далее"
+  />
   </div>
 </template>
 
@@ -74,6 +77,7 @@ export default {
   },
   data(){
     return {
+      page: 1,
       users: [
         {
         date: "24.10.2022",

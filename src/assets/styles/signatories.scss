@@ -1,5 +1,8 @@
 .create__signatories {
-    height: 100vh;
+    // height: 100vh;
+    .right-pagination {
+        float: right;
+    }
     &__content {
         // background-color: red;
         height: 75vh;
@@ -259,22 +262,6 @@
             }
         }
     }
-    .v-pagination {
-        margin-top: -0.1rem;
-        &__list {
-            display: flex;
-            justify-content: flex-end;
-        }
-    }
-    .v-pagination .v-btn {
-        border: 1px solid#2F80ED;
-        color: #2F80ED;
-        background-color: white;
-    }
-    .v-pagination__prev {
-        border-radius: 2px;
-        color: white;
-    }
 }
 
 .signatories {
@@ -339,22 +326,5 @@
                 }
             }
         }
-    }
-    .v-pagination {
-        margin-top: -0.1rem;
-        &__list {
-            display: flex;
-            justify-content: flex-start;
-            padding-left: 1.5rem;
-        }
-    }
-    .v-pagination .v-btn {
-        border: 1px solid#2F80ED;
-        color: #2F80ED;
-        background-color: white;
-    }
-    .v-pagination__prev {
-        border-radius: 2px;
-        color: white;
     }
 }

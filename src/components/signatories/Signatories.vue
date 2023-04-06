@@ -40,12 +40,14 @@
     </v-table>
   </div>
 </div>
-<v-pagination
-    class="paginationSignatories"
+<vue-awesome-paginate
+    :total-items="85"
+    :items-per-page="5"
+    :max-pages-shown="77"
     v-model="page"
-    :length="77"
-  >
-</v-pagination>
+    prev-button-content="Назад"
+    next-button-content="Далее"
+  />
     </div>
   </template>
   
@@ -63,6 +65,7 @@
     },
     data(){
       return {
+        page: 1,
         users: [
  {
     name: "Орехов Антон Игоревич",

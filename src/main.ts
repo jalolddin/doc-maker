@@ -13,9 +13,12 @@ import './assets/styles/documents.scss'
 import './assets/styles/register.scss'
 import './assets/styles/login.scss'
 import './assets/styles/statements.scss'
+import VueAwesomePaginate from "vue-awesome-paginate";
+import "vue-awesome-paginate/dist/style.css";
 loadFonts()
 
 createApp(App)
   .use(router)
   .use(vuetify)
+  .use(VueAwesomePaginate)
   .mount('#app')

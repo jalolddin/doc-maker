@@ -61,23 +61,6 @@
                 }
             }
         }
-        .v-pagination {
-            margin-top: 3rem;
-            &__list {
-                display: flex;
-                justify-content: flex-start;
-                padding-left: 1.5rem;
-            }
-        }
-        .v-pagination .v-btn {
-            border: 1px solid#2F80ED;
-            color: #2F80ED;
-            background-color: white;
-        }
-        .v-pagination__prev {
-            border-radius: 2px;
-            color: white;
-        }
     }
 }
 
@@ -85,38 +68,6 @@
 .create__statements {
     display: flex;
     flex-direction: column;
-    .v-pagination {
-        margin-top: 3rem;
-        span {
-            font-size: 1rem;
-        }
-        &__list {
-            display: flex;
-            justify-content: flex-start;
-            padding-left: 1.5rem;
-        }
-    }
-    .v-pagination__item--is-active {
-        border: 1px solid#2F80ED;
-        button {
-            .v-btn__content {
-                color: #2F80ED;
-            }
-        }
-    }
-    .v-pagination__item {
-        background-color: white;
-        .v-btn__content {
-            color: #E0E0E0;
-        }
-    }
-    // .v-pagination .v-btn {
-    //     // color: #2F80ED;
-    // }
-    .v-pagination__prev {
-        border-radius: 2px;
-        color: white;
-    }
     .example {
         position: absolute;
         display: flex;

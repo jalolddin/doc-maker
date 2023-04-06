@@ -30,11 +30,15 @@
 <StepOne v-if="page === 1" />
 <StepTwo v-if="page === 2" />
 </div>
-<v-pagination
-      v-model="page"
-      :length="2"
-    >
-  </v-pagination>
+<vue-awesome-paginate
+    class="right-pagination"
+    :total-items="2"
+    :items-per-page="1"
+    :max-pages-shown="77"
+    v-model="page"
+    prev-button-content="Назад"
+    next-button-content="Далее"
+  />
         </div>
 </template>
 
